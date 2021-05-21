@@ -3,7 +3,7 @@
 }
 
 .body {
-    max-width: 960px;
+    max-width: 1240px;
 }
 .header-container {
     display: flex;
@@ -14,21 +14,24 @@
 .top-nav {
     display: flex;
     text-align: center;
+    align-items: center;
+}
+.top-nav a {
+    margin-left: 20px;
+    text-decoration: none; 
 }
 
 .top-nav ul {
     text-align: center;
-    list-style-type: none;
+    list-style-type: none; 
 }
 
 .top-nav li {
-    display: inline-block;
-}
+   display: inline-block;
+   }
 
-.top-nav a {
-    text-decoration: none;
-}               
 
+           
 .searchbar-container {
     display: flex;
     flex-direction: column;
@@ -63,105 +66,121 @@
     cursor: pointer;
 }
 
-.filter-container {
+.filter {
     display: flex;
     align-items: center;
 }
+
+/*
+.filter-container {
+     display: flex;   
+     align-items: center;
+}
+*/
 
 .filter-button {
     margin-right: 5px;
     margin-left: 5px;
     cursor: pointer;
-    padding: 5px 30px;    
+    padding: 5px 30px;   
 }
 
-.accommodaations {
+.accommodaations-area {
     display: flex;
-    justify-content: space-evenly;
-    border: 2px solid black;    
+    justify-content: space-between;
+    /*align-items: flex-start;*/
+    
 }
 
 .main-accommodation {
-    flex: 2 2;
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
     background-color: #F2F2;
-    /*width: 60%;*/
-    /*flex-basis: 60%;*/
+    /*align-items: flex-start;*/
+    border-radius: 25px;
 }
+
+.main-accommodation h2 {
+    margin-left: 35px;
+}
+
+.main-accommodation button {
+    margin: 35px
+}
+
 
 .main-card-container {
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: space-around;
-    /*list-style-type: none;*/
-    width: 95%;
+    justify-content: space-around;  
 }
 
 .main-card {
-    flex: 1 1 30%;
+    flex: 0 1;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 20px;   
 }
 
 .main-card-content {
-    flex: 1 1;
-    display: flex;
-    flex-direction: column;    
+    margin: 10px;
 }
 
-.main-card-link {
-    flex: 1 1;
-    display: flex;
+.main-card-link { 
+    flex: 0 0;
+    
 }
 
-.main-card img {
-    width: 100%;
-    object-fit:cover;
+.main-card-image {
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .popular-accommodation {
-   /* width: 30%; */
-   flex: 1 1 ;
+   flex-basis: 35%;
    display: flex;
    flex-direction: column;
    background-color: #F2F2;
+   border-radius: 25px;
 }
 
-.accomodation-header-container {
-    width: 90%;
+.popular-header-container {
+    /*width: 90%;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .popular-card-container {
-    width: 90%;
-    flex:1 1;
+    /*width: 90%;*/
     display: flex;
     flex-direction: column;
-        
 }
+ 
 .popular-card {
     display: flex;
     align-items: center;
     background-color: white;
     border-radius: 20px;
     margin-bottom: 10px;
-
 }
 
 .popular-card-content {
     margin: 10px;
 }
 
-
-
 .popular-card-link {
     flex: 0 0;
 }
 
 .popular-card-image {
-    width: 100px;
+    width: 120px;
     height: 100px;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
@@ -170,46 +189,139 @@
     left: 3px;
 }
 
+.popular-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
 .activities-card-container {
     display: flex;
+    justify-content: space-evenly;
 }
 
-.activities-l-card {
+.activities-card {
+    flex: 0;
     display: flex;
-}
-
-.main-activities-card-link {
-    flex: 1;
+    flex-direction: column;
 }
 
 .activities-card-content {
-    flex: 1;
+    margin: 10px;
 }
 
-@media all and (max-width: 20em){
-    .main-card {
-        flex-basis: 100%;
-    }
-    
+.big-child-card {
+    display: flex;
+    flex-direction: column;
 }
-@media all and (max-width: 20em) {
-    .accommodaations {
+
+.big-child-card-image {
+    width: 260px;
+    height: 360px;
+    object-fit: cover;
+}
+
+.normal-child-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.normal-child-card-image {
+    width: 260px;
+    height: 170px;
+    object-fit: cover;
+}
+
+.short-child-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.short-child-card-image {
+    width: 260px;
+    height: 130px;
+    object-fit: cover;
+}
+
+
+
+@media screen and (max-device-width: 414px){
+
+    
+    
+    .header-container {
+        flex-wrap: wrap;
+    }
+
+    .top-nav ul {
+        padding: 5px;
+    }
+
+    #register {
+        position: relative;
+        bottom: 50px;
+    }
+
+    .filter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .filter-button {
+        margin-bottom: 10px;
+    }
+
+
+    .accommodaations-area {
+        flex-direction: column;
+    }
+
+    .popular-accommodation {
+        order: 1;
+    }
+
+    .main-accommodation {
+        order: 2;
+    }
+
+    .main-card-container {
+        flex-flow: column nowrap;
+        align-items: flex-start;
+    }
+
+    .main-card {
+      /*flex-basis: 200px;*/
+    }
+
+
+    .popular-header-container {
+        margin: 0 50px;
+    }
+
+    .popular-card-container {
+        /*align-items: flex-start;*/
+    }
+
+    .popular-card {
+        /*width: 100%;*/
+       /* flex-basis: 200px;*/
+       /* flex-wrap: wrap;*/
+    }
+
+    .activities-card-container {
         flex-direction: column;
     }
 }
-/*
-@media all and (min-width: 30em) {
-    .main-card {        
-        flex-basis: 50%;
-    }
-}
 
-@media all and (min-width: 60em) {
-    .main-card {        
-        flex-basis: 33.3%;
-    }
-}
-*/
+
 
 
 .filter-button {
@@ -246,28 +358,8 @@
     padding: 3px;
     border-radius: 50%;
 }
-/*
-.main-activities {
-    display: flex;
-    flex-direction: column;
-}*/
 
 
 
-/*
-.activities-l-card {
-    width: 30%;
-}
-.activities-m-card {
-    width: 20%;
-}
-.activities-ms-card {
-    width: 10%;
-}
 
 
-
-.activities-card img {
-    width: 100%;
-}
-*/
