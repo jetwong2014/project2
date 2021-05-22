@@ -2,9 +2,8 @@
     box-sizing: border-box;
 }
 
-.body {
-    max-width: 1240px;
-}
+
+
 .header-container {
     display: flex;
     align-items: center;
@@ -12,25 +11,19 @@
 }
 
 .top-nav {
-    display: flex;
-    text-align: center;
-    align-items: center;
+    /*display: flex;*/
+    /*text-align: center;*/
+    /*align-items: center;*/
+    margin-left: auto;
 }
 .top-nav a {
-    margin-left: 20px;
+    margin-left: 30px;
     text-decoration: none; 
 }
-
-.top-nav ul {
-    text-align: center;
-    list-style-type: none; 
+#register {
+    text-decoration: none;
+    margin-left: 30px;
 }
-
-.top-nav li {
-   display: inline-block;
-   }
-
-
            
 .searchbar-container {
     display: flex;
@@ -41,59 +34,104 @@
     display: flex;   
 }
 
-.map-button {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+#map-button {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     border: 0;
     cursor: pointer;
 }
 
 .fa-map-marker-alt {
-    padding: 10px;
+    padding: 15px;
 }
 
 .search-box {
-    border: 1px solid #ccc ;
+    width: 250px;
+    /*padding-right: 60px;*/
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
-.search-button {
+
+#search-button {
     background-color: #0065FC;
     color:white;
     border: 0;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-radius: 20px;
+    padding: 20px;
     cursor: pointer;
+    position: relative;
+    right: 10px;
 }
+
+.fa-search {
+    color: white;
+}
+
+
 
 .filter {
     display: flex;
     align-items: center;
+
 }
 
-/*
-.filter-container {
-     display: flex;   
-     align-items: center;
+#filter-content {
+    list-style-type: none;
+    display: flex;
 }
-*/
 
 .filter-button {
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
     cursor: pointer;
-    padding: 5px 30px;   
+    padding: 0px 15px 0px 0px;
+    background-color: white;
+    border: thin solid;
+    border-radius: 20px;
+}
+
+.fa-money-bill-wave {
+    color: #0065FC;
+    background-color:skyblue;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.fa-child {
+    color: #0065FC;
+    background-color:skyblue;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.fa-heart {
+    color: #0065FC;
+    background-color:skyblue;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.fa-dog {
+    color: #0065FC;
+    background-color:skyblue;
+    padding: 12px;
+    border-radius: 50%;
 }
 
 .accommodaations-area {
-    display: flex;
+    display: flex; 
     justify-content: space-between;
     /*align-items: flex-start;*/
     
 }
 
 .main-accommodation {
-    flex-basis: 60%;
+    flex-basis: 62%;
     display: flex;
     flex-direction: column;
     background-color: #F2F2;
@@ -105,24 +143,27 @@
     margin-left: 35px;
 }
 
-.main-accommodation button {
-    margin: 35px
+#show-more {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 35px;
 }
 
 
 .main-card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;  
+    justify-content: space-around;
 }
 
 .main-card {
-    flex: 0 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     background-color: white;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border-radius: 20px;   
 }
 
@@ -132,44 +173,52 @@
 
 .main-card-link { 
     flex: 0 0;
+    padding: 3px;
     
 }
 
 .main-card-image {
     width: 300px;
-    height: 100px;
+    height: 120px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
 .popular-accommodation {
-   flex-basis: 35%;
-   display: flex;
-   flex-direction: column;
-   background-color: #F2F2;
-   border-radius: 25px;
+    flex-basis: 35%;      
+    background-color: #F2F2;
+    border-radius: 25px;
 }
 
 .popular-header-container {
-    /*width: 90%;*/
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 35px;
 }
 
+
+
+
 .popular-card-container {
-    /*width: 90%;*/
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 75%;
+    /*align-items: center;*/
 }
  
 .popular-card {
+    width: 90%;
     display: flex;
     align-items: center;
     background-color: white;
     border-radius: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
+
 
 .popular-card-content {
     margin: 10px;
@@ -177,11 +226,12 @@
 
 .popular-card-link {
     flex: 0 0;
+    padding: 3px;
 }
 
 .popular-card-image {
     width: 120px;
-    height: 100px;
+    height: 130px;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
     position: relative;
@@ -189,24 +239,14 @@
     left: 3px;
 }
 
-.popular-card {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border-radius: 20px;
-    margin-bottom: 10px;
+.activities-area {
+    margin-top: 50px;
 }
-
 .activities-card-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
-.activities-card {
-    flex: 0;
-    display: flex;
-    flex-direction: column;
-}
 
 .activities-card-content {
     margin: 10px;
@@ -215,70 +255,114 @@
 .big-child-card {
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 0px 2px gray;
+    border-radius: 20px 20px 20px 20px;
+    
 }
 
 .big-child-card-image {
-    width: 260px;
+    width: 320px;
     height: 360px;
     object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .normal-child-card {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    box-shadow: 0px 0px 2px gray;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .normal-child-card-image {
-    width: 260px;
+    width: 320px;
     height: 170px;
     object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .short-child-card {
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 0px 2px gray;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .short-child-card-image {
-    width: 260px;
+    width: 320px;
     height: 130px;
     object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#footer-container {
+    display: flex;
+    background-color: #F2F2;
+    margin-top: 50px;
+}
+
+.footer-card {
+    flex-basis: 30%;
 }
 
 
+.footer-card ul {
+    list-style-type: none;
+    padding: 0px;
+}
 
-@media screen and (max-device-width: 414px){
+.footer-card li {
+    padding: 5px 0px;
+}
+
+.footer-card a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-device-width: 428px){
 
     
     
     .header-container {
         flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .top-nav {
+        order: 2;
+        margin-left: 0;
     }
 
-    .top-nav ul {
-        padding: 5px;
+    .top-nav a {
+        margin-right: 50px;
     }
+    
 
     #register {
-        position: relative;
-        bottom: 50px;
+        order: 1;
+        margin-right: 20px; 
     }
 
+    
     .filter {
-        flex-direction: column;
+        flex-direction: column; 
         align-items: flex-start;
+
     }
 
-    .filter-content {
+    #filter-content {
         display: flex;
         flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 0px;
     }
 
     .filter-button {
         margin-bottom: 10px;
     }
-
+    
 
     .accommodaations-area {
         flex-direction: column;
@@ -303,7 +387,7 @@
 
 
     .popular-header-container {
-        margin: 0 50px;
+       margin: 0 20px;
     }
 
     .popular-card-container {
@@ -311,6 +395,7 @@
     }
 
     .popular-card {
+
         /*width: 100%;*/
        /* flex-basis: 200px;*/
        /* flex-wrap: wrap;*/
@@ -323,41 +408,6 @@
 
 
 
-
-.filter-button {
-    background-color: white;
-    border: thin solid;
-    border-radius: 10px;
-    padding-left: 0px;
-}
-
-.fa-money-bill-wave {
-    color: #0065FC;
-    background-color:skyblue;
-    padding: 3px;
-    border-radius: 50%;
-}
-
-.fa-child {
-    color: #0065FC;
-    background-color:skyblue;
-    padding: 3px;
-    border-radius: 50%;
-}
-
-.fa-heart {
-    color: #0065FC;
-    background-color:skyblue;
-    padding: 3px;
-    border-radius: 50%;
-}
-
-.fa-dog {
-    color: #0065FC;
-    background-color:skyblue;
-    padding: 3px;
-    border-radius: 50%;
-}
 
 
 
