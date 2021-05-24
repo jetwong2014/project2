@@ -387,6 +387,17 @@ h2 {
     color: black;
 }
 
+/* for small size phone */
+@media screen and (min-width:300px) and (max-width:380px) {
+    #top-nav a {
+        margin: auto;
+    }
+    
+    #search-box {
+        width: 150px;
+    }
+}
+
 /* phone decive */ 
 @media screen and (max-width: 480px) {     
     #header-container {
@@ -396,7 +407,7 @@ h2 {
     
     #top-nav {
         order: 2;
-        margin-left: 0;
+        margin-left: 0px;
     }
 
     #top-nav a {
@@ -585,7 +596,3 @@ h2 {
         margin-bottom: 20px;
     }
 }
-
-
-
-
