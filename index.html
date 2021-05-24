@@ -3,33 +3,34 @@
     <head>
         <title>Reservia: Accommodations , Activities & Wonderful Experience </title>
         <meta charset="utf-8">
+        <link href="./CSS/normalize.css" type="text/css" rel="stylesheet">
         <link href="./CSS/style.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
         <meta name="description" content="Find a place for your dream vacation!">
         <script src="https://kit.fontawesome.com/4600e15810.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
      </head>
     <body>
         <header>
-            <div class="header-container">
+            <div id="header-container">
                 <img src="./images/Reservia.svg" alt="Reservia Logo">
-                <nav class="top-nav">
-                    <a href="#">Accommodations</a></li>
-                    <a href="#">Activities</a></li>                                            
+                <nav id="top-nav">
+                    <a href="#">Accommodations</a>
+                    <a href="#">Activities</a>
                 </nav>
-                <a href="#" id="register">Sign Up</a>
-                
+                <a href="#" id="register">Sign Up</a>                
             </div>
         </header>
 
-        <section class="searchbar">
-            <div class="searchbar-container">
+        <section id="searchbar">
+            <div id="searchbar-container">
                 <h2>Find a place for your dream vacation</h2>
                 <p>Downtown or in nature</p>
-                <form class="searchbar-content" action="#">
+                <form id="searchbar-content" action="#">
                     <button id="map-button">
                         <i class="fas fa-map-marker-alt"></i>
                     </button>
-                    <input class="search-box" type="text" placeholder=" Marseille,France" name="search">
+                    <input id="search-box" type="text" placeholder=" Marseille,France" name="search">
                     <button id="search-button" type="submit">
                         <i class="fas fa-search"></i>
                     </button>                    
@@ -37,7 +38,7 @@
             </div>  
         </section>
         
-        <section class="filter">
+        <section id="filter">
             <h3>Filters</h3>                         
                 <ul id="filter-content">                
                     <li><button class="filter-button"><i class="fas fa-money-bill-wave"></i> Low cost</button></li>               
@@ -50,11 +51,10 @@
 
         
 
-        <section class="accommodations-area">
-            <div class="main-accommodation">
-                <h2 class="accommodation-title">Accommodations in Marseille</h2>
-                
-                <div class="main-card-container">
+        <section id="accommodations-area">
+            <div id="main-accommodation">
+                <h2>Accommodations in Marseille</h2>                
+                <div id="main-card-container">
                     <div class="main-card">                        
                         <a href="#" class="main-card-link">
                             <img src="images/accommodations/4_small/7.jpg" class="main-card-image" alt="accommodaations image"/>
@@ -62,11 +62,11 @@
                         <span class="main-card-content">
                             <strong>Auberge La Cannebiere</strong><br>                            
                             Night starting at<strong> 25&#8352;</strong><br>                                                           
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="far fa-star gary"></i>
                         </span>
                     </div>  
                         
@@ -77,11 +77,11 @@
                         <span class="main-card-content">
                             <strong>Hotel du port</strong><br>                            
                             Night starting at<strong> 52&#8352;</strong><br>                                                           
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
                         </span>
                     </div>
 
@@ -92,11 +92,11 @@
                         <span class="main-card-content">
                             <strong>Les mouettes Hotel</strong><br>                            
                             Night starting at<strong> 76&#8352;</strong><br>                                                           
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="far fa-star gary"></i>
                         </span>
                     </div>    
                                 
@@ -107,11 +107,11 @@
                         <span class="main-card-content">
                             <strong>Auberge La Cannebiere</strong><br>                            
                             Night starting at<strong> 46&#8352;</strong><br>                                                           
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="far fa-star gary"></i>
+                            <i class="far fa-star gary"></i>
                         </span>
                     </div>
                                     
@@ -122,11 +122,11 @@
                         <span class="main-card-content">
                             <strong>Auberge Le Panier</strong><br>                            
                             Night starting at<strong> 23&#8352;</strong><br>                                                           
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="far fa-star gary"></i>
                         </span>                                    
                     </div>
                     
@@ -137,11 +137,11 @@
                         <span class="main-card-content">
                             <strong>Hotel chez Amina</strong><br>                            
                             Night starting at<strong> 96&#8352;</strong><br>                                                           
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
                         </span>                                    
                     </div>                    
                 </div>
@@ -149,14 +149,13 @@
                     <a id="show-more" href="#">Show more</a>
                 </div>
             </div>
-            <div class="popular-accommodation">
-                <div class="popular-header-container">
-                    <h2 class="accommodation-title">Most Popular</h2>
+            <div id="popular-accommodation">
+                <div id="popular-header-container">
+                    <h2>Most Popular</h2>
                     <i class="fas fa-chart-line"></i>
                 </div>
                 
-
-                <div class="popular-card-container">
+                <div id="popular-card-container">
                     <div class="popular-card">
                         <a href="#" class="popular-card-link">
                             <img src="images/accommodations/4_small/3.jpg" class="popular-card-image" alt="accommodaations image"/>
@@ -164,11 +163,11 @@
                         <span class="popular-card-content">
                             <strong>Morning Sun Hotel</strong><br>                            
                             Night starting at<strong> 128&#8352;</strong><br>                                                                     
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>                                                      
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>                                                      
                         </span> 
                     </div>
 
@@ -179,11 +178,11 @@
                         <span class="popular-card-content">
                             <strong>Au coeur de l'eau Bed and Breakfast</strong><br>
                             Night starting at<strong> 71&#8352;</strong><br>                              
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>                                                                           
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="far fa-star gary"></i>                                                                           
                         </span> 
                     </div>
 
@@ -194,20 +193,20 @@
                         <span class="popular-card-content">
                             <strong>Tout bleu et Blanc Hotel</strong><br>
                             Night starting at<strong> 68&#8352;</strong><br>                                                       
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>                                                                               
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="far fa-star gary"></i>                                                                               
                         </span> 
                     </div>                                             
                 </div>
             </div>
         </section>
         
-        <section class="activities-area">
+        <section id="activities-area">
             <h2>Activites in Marseille</h2>
-            <div class="activities-card-container">
+            <div id="activities-card-container">
                 <div class="activities-card">
                     <div class="big-child-card">
                     <a href="#" class="activities-card-link">
@@ -314,10 +313,7 @@
                         </li>
                     </ul>                    
                 </div>
-
             </div>
-        </footer>
-
-        
+        </footer>       
     </body>
 </html>
