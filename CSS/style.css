@@ -4,7 +4,7 @@
 
 body {
     margin: 0 30px;
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 h2 {
@@ -18,28 +18,28 @@ h2 {
     justify-content: space-between;
 }
 
-#top-nav {
+nav {
     margin-left: auto;
 }
 
-#top-nav a {
+nav a {
     margin-left: 30px;
-    color:block;
-    text-decoration: none; 
+    color:#CCC;
+    text-decoration: none;
 }
 
-#top-nav a:visited {
+nav a:visited {
     color: black;
 }
 
-#top-nav a:hover {
+nav a:hover {
     color: #0065FC;
     font-weight: 800;
     text-decoration: underline;
     background-color: transparent;
-
 }
 
+/* Sign up link */
 #register {
     text-decoration: none;
     color: #0065FC;
@@ -51,19 +51,19 @@ h2 {
     text-decoration: underline;
 }
  
-/* searchbar area*/
-#searchbar-container {
-    margin-bottom: 20px;
+/*#searchbar-container {
+    
 }
-
+*/
 #searchbar-content {
-    display: flex;   
+    display: flex;
+    margin-bottom: 20px;   
 }
 
 #map-button {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    border: 0px ;
+    border: 0;
     cursor: pointer;
     background-color: #ccc;
 }
@@ -75,8 +75,8 @@ h2 {
 
 #search-box {
     width: 280px;
-    border-right: 0px;
-    border-left: 0px;
+    border-right: 0;
+    border-left: 0;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     font-weight: bold;
@@ -103,20 +103,20 @@ h2 {
 
 
 /* filter area */
-#filter {
+#filter-bar {
     display: flex;
     align-items: center;
 }
 
-#filter-content {
+#filter-btn-container {
     list-style-type: none;
     display: flex;
 }
 
 .filter-button {
-    margin: 0px 15px 0px 0px;
+    margin: 0 15px 0 0;
     cursor: pointer;
-    padding: 0px 15px 0px 0px;
+    padding: 0 15px 0 0;
     background-color: white;
     border: thin solid;
     border-radius: 20px;
@@ -127,36 +127,18 @@ h2 {
     transform: scale(1.3);
 }
 
-/* money icon */
-.fa-money-bill-wave {
+/* for filter button icon style */
+.filter-btn-icon {
     color: #0065FC;
     background-color: #DEEBFF;
     padding: 12px;
     border-radius: 50%;
 }
-
-/* boby icon */
-.fa-child {
-    color: #0065FC;
-    background-color:#DEEBFF;
-    padding: 12px;
-    border-radius: 50%;
-}
-
-/* heart icon */
-.fa-heart {
-    color: #0065FC;
-    background-color:#DEEBFF;
-    padding: 12px;
-    border-radius: 50%;
-}
-
-/* dog icon */
-.fa-dog {
-    color: #0065FC;
-    background-color:#DEEBFF;
-    padding: 12px;
-    border-radius: 50%;
+/* information icon*/
+.fa-info-circle {
+    color: white;
+    background-color: #0065FC;
+    border-radius: 50%;  
 }
 
 /* accommodations area */
@@ -215,7 +197,7 @@ h2 {
 .main-card-image {    
     height: 120px;
     object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0 0;
     width: 100%;
 }
 
@@ -267,7 +249,7 @@ h2 {
     width: 100%;
     height: 130px;
     object-fit: cover;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 20px 0 0 20px;
     position: relative;
     top: 2px;
     left: 2px;
@@ -287,14 +269,15 @@ h2 {
     margin-top: 50px;
 }
 
+/* contain have 4 banner*/
 #activities-card-container {
     display: flex;
     justify-content: space-between;
 }
 
 
-/* four div contain , 1st and 3rd contain tall img card, 2nd and 4th contain normal and short img card */
-.activities-card {
+/* 1st and 3rd banner contain tall card, 2nd and 4th banner contain normal card and short card*/   
+.activities-banner {
     flex-basis: 23%;
 }
 
@@ -303,61 +286,61 @@ h2 {
 }
 
 /* contain tall img */
-.big-child-card {
+.tall-card {
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 2px gray;
+    box-shadow: 0 0 2px gray;
     border-radius: 20px 20px 20px 20px;
 }
 
-.big-child-card-image {
+.tall-card-image {
     width: 100%;
     height: 360px;
     object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0 0;
 }
 
 /* contain normal img*/
-.normal-child-card {
+.normal-card {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-    box-shadow: 0px 0px 2px gray;
+    box-shadow: 0 0 2px gray;
     border-radius: 20px 20px 20px 20px;
 }
 
-.normal-child-card-image {
+.normal-card-image {
     width: 100%;
     height: 170px;
     object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0 0;
 }
  
 /* contain short img */
-.short-child-card {
+.short-card {
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 2px gray;
+    box-shadow: 0 0 2px gray;
     border-radius: 20px 20px 20px 20px;
 }
 
-.short-child-card-image {
+.short-card-image {
     width: 100%;
     height: 130px;
     object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0 0;
 }
 
 /* cards hover */
-.big-child-card:hover {
+.tall-card:hover {
     transform: scale(1.1);
 }
 
-.normal-child-card:hover {
+.normal-card:hover {
     transform: scale(1.1);
 }
 
-.short-child-card:hover{
+.short-card:hover{
     transform: scale(1.1);
 }
 
@@ -378,7 +361,7 @@ h2 {
 }
 
 .footer-card li {
-    padding: 5px 0px;
+    padding: 5px 0;
 }
 
 .footer-card a {
@@ -389,7 +372,7 @@ h2 {
 
 /* for small size phone */
 @media screen and (min-width:300px) and (max-width:380px) {
-    #top-nav a {
+    nav a {
         margin: auto;
     }
     
@@ -405,12 +388,12 @@ h2 {
         justify-content: space-between;
     }
     
-    #top-nav {
+    nav {
         order: 2;
-        margin-left: 0px;
+        margin-left: 0;
     }
 
-    #top-nav a {
+    nav a {
         margin-right: 30px;
     }
     
@@ -419,17 +402,17 @@ h2 {
         margin-right: 20px; 
     }
     
-    #filter {
+    #filter-bar {
         flex-direction: column; 
         align-items: flex-start;
 
     }
 
-    #filter-content {
+    #filter-btn-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
-        padding: 0px;
+        padding: 0;
     }
 
     .filter-button {
@@ -453,7 +436,7 @@ h2 {
 
     .main-card {
         flex-basis: 100%;
-        box-shadow: 0px 0px 2px gray;
+        box-shadow: 0 0 2px gray;
     }
 
     #popular-header-container {
@@ -465,12 +448,12 @@ h2 {
         justify-content: space-around;
     }
 
-    .activities-card {        
+    .activities-banner {        
         flex-basis: 100%;
         margin-bottom: 20px;
     }
 
-    .big-child-card-image, .normal-child-card-image, .short-child-card-image {
+    .tall-card-image, .normal-card-image, .short-card-image {
         height: 160px;
     }
 
@@ -481,16 +464,16 @@ h2 {
 
 /* phone device landscape */
 @media screen and (min-width: 481px) and (max-width: 767px) {
-    #filter {
+    #filter-bar {
         flex-direction: column; 
         align-items: flex-start;
     }
 
-    #filter-content {
+    #filter-btn-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
-        padding: 0px;
+        padding: 0;
     }
 
     .filter-button {
@@ -509,7 +492,7 @@ h2 {
 
     .main-card {
         flex-basis: 40%;
-        box-shadow: 0px 0px 2px gray;
+        box-shadow: 0 0 2px gray;
     }
 
     #popular-accommodation {
@@ -533,17 +516,17 @@ h2 {
         justify-content: space-around;
     }
 
-    .activities-card {
+    .activities-banner {
         flex-basis: 90%;
     }
 
     
-    .activities-card img {
+    .activities-banner img {
         height: 200px;
         width: 100%;
     }
 
-    .activities-card {        
+    .activities-banner {        
         margin-bottom: 20px;
     }
    
@@ -554,13 +537,13 @@ h2 {
 
 /*  big size phone device landscape, tablet  portrait */  
 @media screen and (min-width: 768px) and (max-width:1280px) {
-    #filter {
+    #filter-bar {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    #filter-content {
-        padding: 0px;
+    #filter-btn-container {
+        padding: 0;
     }
 
     #accommodations-area {
@@ -574,7 +557,7 @@ h2 {
     }
 
     .main-card {
-        box-shadow: 0px 0px 2px gray;
+        box-shadow: 0 0 2px gray;
     }
 
     #popular-accommodation {
@@ -591,7 +574,7 @@ h2 {
         flex-wrap: wrap;
     }
 
-    .activities-card {
+    .activities-banner {
         flex-basis: 48%;
         margin-bottom: 20px;
     }
