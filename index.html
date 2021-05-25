@@ -10,47 +10,45 @@
         <script src="https://kit.fontawesome.com/4600e15810.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
      </head>
+
     <body>
         <header>
             <div id="header-container">
                 <img src="./images/Reservia.svg" alt="Reservia Logo">
-                <nav id="top-nav">
-                    <a href="#">Accommodations</a>
-                    <a href="#">Activities</a>
+                <nav>
+                    <a href="#accommodations-area">Accommodations</a>
+                    <a href="#activities-area">Activities</a>
                 </nav>
-                <a href="#" id="register">Sign Up</a>                
+                <a href="#" id="register">Sign Up</a>                             
             </div>
-        </header>
 
-        <section id="searchbar">
-            <div id="searchbar-container">
-                <h2>Find a place for your dream vacation</h2>
-                <p>Downtown or in nature</p>
-                <form id="searchbar-content" action="#">
-                    <button id="map-button">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </button>
-                    <input id="search-box" type="text" placeholder=" Marseille,France" name="search">
-                    <button id="search-button" type="submit">
-                        <i class="fas fa-search"></i>
-                    </button>                    
-                </form>
-            </div>  
-        </section>
+            <h1>Find a place for your dream vacation</h1>
+            
+            <p>Downtown or in nature</p>            
+            <form id="searchbar-content" action="#">
+                <button id="map-button">
+                    <i class="fas fa-map-marker-alt"></i>
+                </button>
+                <input id="search-box" type="text" placeholder=" Marseille,France" name="search">
+                <button id="search-button" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>                    
+            </form>                            
+        </header>
         
         <section id="filter">
-            <h3>Filters</h3>                         
-                <ul id="filter-content">                
-                    <li><button class="filter-button"><i class="fas fa-money-bill-wave"></i> Low cost</button></li>               
-                    <li><button class="filter-button"><i class="fas fa-child"></i> Family-friendly</button></li>
-                    <li><button class="filter-button"><i class="fas fa-heart"></i> Romantic</button></li>
-                    <li><button class="filter-button"><i class="fas fa-dog"></i> Pets allowed</button></li>
-                </ul>                           
+            <div id="filter-bar">
+                <h3>Filters</h3>                         
+                <ul id="filter-btn-container">                
+                    <li><button class="filter-button"><i class="fas fa-money-bill-wave filter-btn-icon"></i> Low cost</button></li>               
+                    <li><button class="filter-button"><i class="fas fa-child filter-btn-icon"></i> Family-friendly</button></li>
+                    <li><button class="filter-button"><i class="fas fa-heart filter-btn-icon"></i> Romantic</button></li>
+                    <li><button class="filter-button"><i class="fas fa-dog filter-btn-icon"></i> Pets allowed</button></li>
+                </ul>
+            </div>
+           <p><i class="fas fa-info-circle"></i> More than 500 accommodaations are available in this city</p>                                    
          </section>
-            <p><i class="fas fa-info-circle"></i> More than 500 accommodaations are available in this city</p>
-
-        
-
+                   
         <section id="accommodations-area">
             <div id="main-accommodation">
                 <h2>Accommodations in Marseille</h2>                
@@ -149,7 +147,8 @@
                     <a id="show-more" href="#">Show more</a>
                 </div>
             </div>
-            <div id="popular-accommodation">
+
+            <aside id="popular-accommodation">
                 <div id="popular-header-container">
                     <h2>Most Popular</h2>
                     <i class="fas fa-chart-line"></i>
@@ -167,7 +166,7 @@
                             <i class="fas fa-star blue"></i>
                             <i class="fas fa-star blue"></i>
                             <i class="fas fa-star blue"></i>
-                            <i class="fas fa-star blue"></i>                                                      
+                            <i class="fas fa-star blue"></i>                                                         
                         </span> 
                     </div>
 
@@ -201,73 +200,59 @@
                         </span> 
                     </div>                                             
                 </div>
-            </div>
+            </aside>
         </section>
         
         <section id="activities-area">
             <h2>Activites in Marseille</h2>
             <div id="activities-card-container">
-                <div class="activities-card">
-                    <div class="big-child-card">
+                <div class="activities-banner">
+                    <div class="tall-card">
                     <a href="#" class="activities-card-link">
-                        <img src="images/activities/4_small/1.jpg" class="big-child-card-image" alt="activities image"/>
+                        <img src="images/activities/4_small/1.jpg" class="tall-card-image" alt="activities image"/>
                     </a>
-                    <span class="activities-card-content">
-                        <strong>Old port</strong>
-                    </span>
+                    <span class="activities-card-content"><strong>Old port</strong></span>       
                     </div>
                 </div>
 
-                <div class="activities-card">
-                    <div class="normal-child-card">
+                <div class="activities-banner">
+                    <div class="normal-card">
                         <a href="#" class="activities-card-link">
-                            <img src="images/activities/4_small/6.jpg" class="normal-child-card-image" alt="activities image"/>
+                            <img src="images/activities/4_small/6.jpg" class="normal-card-image" alt="activities image"/>
                         </a>
-                        <span class="activities-card-content">
-                            <strong>Pomegues Fort</strong>
-                        </span>
-                    </div>
-                    
-                    <div class="short-child-card">
+                        <span class="activities-card-content"><strong>Pomegues Fort</strong></span>                         
+                    </div>  
+                                        
+                    <div class="short-card">
                         <a href="#" class="activities-card-link">
-                        <img src="images/activities/4_small/3.jpg" class="short-child-card-image" alt="activities image
-                        activities image"/>
+                            <img src="images/activities/4_small/3.jpg" class="short-card-image" alt="activities image"/>                        
                         </a>
-                        <span class="activities-card-content">
-                            <strong>Frioul Island</strong>
-                        </span>                    
+                        <span class="activities-card-content"><strong>Frioul Island</strong></span>                                         
                     </div>                
                 </div>
 
-                <div class="activities-card">
-                    <div class="big-child-card">
+                <div class="activities-banner">
+                    <div class="tall-card">
                     <a href="#" class="activities-card-link">
-                        <img src="images/activities/4_small/4.jpg" class="big-child-card-image" alt="activities image"/>
+                        <img src="images/activities/4_small/4.jpg" class="tall-card-image" alt="activities image"/>
                     </a>
-                    <span class="activities-card-content">
-                        <strong>Calanques National Park</strong>
-                    </span>
+                    <span class="activities-card-content"><strong>Calanques National Park</strong></span>                                          
                     </div>
                 </div>
 
-                <div class="activities-card">
-                    <div class="normal-child-card">
+                <div class="activities-banner">
+                    <div class="normal-card">
                         <a href="#" class="activities-card-link">
-                            <img src="images/activities/4_small/2.jpg" class="normal-child-card-image" alt="activities image"/>
+                            <img src="images/activities/4_small/2.jpg" class="normal-card-image" alt="activities image"/>
                         </a>
-                        <span class="activities-card-content">
-                            <strong>Notre-Dame-de-la-Garde</strong>
-                        </span>
+                        <span class="activities-card-content"><strong>Notre-Dame-de-la-Garde</strong></span>                                                  
                     </div>
                     
-                    <div class="short-child-card">
+                    <div class="short-card">
                         <a href="#" class="activities-card-link">
-                        <img src="images/activities/4_small/5.jpg" class="short-child-card-image" alt="activities image
-                        activities image"/>
+                            <img src="images/activities/4_small/5.jpg" class="short-card-image" alt="activities image"/>
                         </a>
-                        <span class="activities-card-content">
-                            <strong>Longchamp Park</strong>
-                        </span>                    
+                        <span class="activities-card-content"><strong>Longchamp Park</strong></span>                                                               
                     </div>                
                 </div>
             </div>                
@@ -278,40 +263,26 @@
                 <div class="footer-card">
                     <h3>About</h3>
                     <ul>
-                        <li>
-                            <a href="#">Site Map</a>
-                        </li>
-                        <li>
-                            <a href="#">General Terms and Conditions</a>
-                        </li>
-                        <li>
-                            <a href="#">Data and Privacy</a>
-                        </li>
-                    </ul>                    
-                </div>
-
+                        <li><a href="#">Site Map</a></li>                        
+                        <li><a href="#">General Terms and Conditions</a></li>                          
+                        <li><a href="#">Data and Privacy</a></li>
+                    </ul>    
+                </div>                                         
+                
                 <div class="footer-card">
                     <h3>Our Accommodations</h3>
                     <ul>
-                        <li>
-                            <a href="#">Quality Assessment</a>
-                        </li>
-                        <li>
-                            <a href="#">You have a hotel?</a>
-                        </li>
-                    </ul>                    
-                </div>
-
+                        <li><a href="#">Quality Assessment</a></li>                        
+                        <li><a href="#">You have a hotel?</a></li>                    
+                    </ul>
+                </div>                      
+                
                 <div class="footer-card">
                     <h3>Assistance</h3>
                     <ul>
-                        <li>
-                            <a href="#">Hel Desk</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact Us</a>
-                        </li>
-                    </ul>                    
+                        <li><a href="#">Hel Desk</a></li>                   
+                        <li><a href="#">Contact Us</a></li>                       
+                    </ul>                                                             
                 </div>
             </div>
         </footer>       
