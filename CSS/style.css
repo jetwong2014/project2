@@ -51,10 +51,6 @@ nav a:hover {
     text-decoration: underline;
 }
  
-/*#searchbar-container {
-    
-}
-*/
 #searchbar-content {
     display: flex;
     margin-bottom: 20px;   
@@ -93,7 +89,7 @@ nav a:hover {
     padding: 20px;
     cursor: pointer;
     position: relative;
-    right: 10px;
+    right: 15px;
 }
 
 /* search icon */
@@ -453,7 +449,7 @@ nav a:hover {
         margin-bottom: 20px;
     }
 
-    .tall-card-image, .normal-card-image, .short-card-image {
+    .tall-card-image, .normal-card-image ,.short-card-image {
         height: 160px;
     }
 
