@@ -252,11 +252,11 @@ nav a:hover {
 }
 
 /* star color */
-.blue {
+.active {
     color: #0065FC;
 }
 
-.gary {
+.no-active {
     color: #ccc;
 } 
 
