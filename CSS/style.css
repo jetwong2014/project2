@@ -24,7 +24,7 @@ nav {
 
 nav a {
     margin-left: 30px;
-    color:#CCC;
+    color: black;
     text-decoration: none;
 }
 
@@ -252,11 +252,11 @@ nav a:hover {
 }
 
 /* star color */
-.blue {
+.active {
     color: #0065FC;
 }
 
-.gary {
+.no-active {
     color: #ccc;
 } 
 
