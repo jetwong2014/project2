@@ -92,6 +92,7 @@ nav a:hover {
     letter-spacing:1px;
 }
 
+/* search-button only display in phone and tablet */ 
 #search-button {
     display: none;
     background-color: #0065FC;
@@ -389,11 +390,12 @@ nav a:hover {
     #search-box {
         width: 150px;
     }
-    
+
     #search-button-desktop {
         display: none;
     }
 
+    /* search-button only display in phone and tablet */ 
     #search-button {
         display: inline;
     }
@@ -424,6 +426,7 @@ nav a:hover {
         display: none;
     }
 
+    /* search-button only display in phone and tablet */
     #search-button {
         display: inline;
     }
@@ -496,6 +499,7 @@ nav a:hover {
         display: none;
     }
 
+    /* search-button only display in phone and tablet */
     #search-button {
         display: inline;
     }
@@ -578,6 +582,7 @@ nav a:hover {
         display: none;
     }
 
+    /* search-button only display in phone and tablet */
     #search-button {
         display: inline;
     }
