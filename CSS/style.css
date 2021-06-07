@@ -79,6 +79,7 @@ nav a:hover {
     color: black;
 }
 
+/* search-button-desktop only display in version */ 
 #search-button-desktop {
     background-color: #0065FC;
     color:white;
