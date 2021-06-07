@@ -79,7 +79,21 @@ nav a:hover {
     color: black;
 }
 
+#search-button-desktop {
+    background-color: #0065FC;
+    color:white;
+    border: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing:1px;
+}
+
 #search-button {
+    display: none;
     background-color: #0065FC;
     color:white;
     border: 0;
@@ -375,9 +389,17 @@ nav a:hover {
     #search-box {
         width: 150px;
     }
+    
+    #search-button-desktop {
+        display: none;
+    }
+
+    #search-button {
+        display: inline;
+    }
 }
 
-/* phone decive */ 
+/* phone decive vertical mode*/ 
 @media screen and (max-width: 480px) {     
     #header-container {
         flex-wrap: wrap;
@@ -397,6 +419,15 @@ nav a:hover {
         order: 1;
         margin-right: 20px; 
     }
+    
+    #search-button-desktop {
+        display: none;
+    }
+
+    #search-button {
+        display: inline;
+    }
+
     
     #filter-bar {
         flex-direction: column; 
@@ -460,6 +491,15 @@ nav a:hover {
 
 /* phone device landscape */
 @media screen and (min-width: 481px) and (max-width: 767px) {
+
+    #search-button-desktop {
+        display: none;
+    }
+
+    #search-button {
+        display: inline;
+    }
+
     #filter-bar {
         flex-direction: column; 
         align-items: flex-start;
@@ -533,6 +573,15 @@ nav a:hover {
 
 /*  big size phone device landscape, tablet  portrait */  
 @media screen and (min-width: 768px) and (max-width:1280px) {
+
+    #search-button-desktop {
+        display: none;
+    }
+
+    #search-button {
+        display: inline;
+    }
+
     #filter-bar {
         flex-direction: column;
         align-items: flex-start;
